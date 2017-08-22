@@ -18,7 +18,7 @@ public class Garage {
 	    
 	    public Garage() {
 	        voitures = new ArrayList<Vehicule>();
-	        file = new File("../../..//garage.txt");
+	        file = new File("../../../garage.txt");
 	        initialisation();
 	    }
 	    
