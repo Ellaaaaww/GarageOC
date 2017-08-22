@@ -18,7 +18,7 @@ public class Garage {
 	    
 	    public Garage() {
 	        voitures = new ArrayList<Vehicule>();
-	        file = new File("C:/Users/Ella/Documents/EFREI/Certification_Java_OC/activite/garage.txt");
+	        file = new File("../../..//garage.txt");
 	        initialisation();
 	    }
 	    
@@ -31,7 +31,7 @@ public class Garage {
 	            for(Vehicule v : (ArrayList<Vehicule>)ois.readObject())
 	                voitures.add(v);
 	        }catch (FileNotFoundException e) {
-	            System.err.println("Aucune voiture sauvegardée !");
+	            System.err.println("Aucune voiture sauvegardÃ©e !");
 	        }catch (EOFException e) {
 	            e.printStackTrace();
 	        }catch (ClassNotFoundException e) {
